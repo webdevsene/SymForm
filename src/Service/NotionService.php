@@ -65,7 +65,7 @@ class NotionService
                 'id' => $value['properties']['id']['formula']['string'],
                 'nom' => $value['properties']['Nom']['title'][0]['plain_text'],
                 'resume' => $value['properties']['Résumé']['rich_text'][0]['plain_text'],
-                'image' => $value['properties']['Image']['files'][0]['file']['url'] ?? $value['properties']['Image']['files'][0]['file']['url'] = null,
+                'image' => $value['properties']['Img']['files'][0]['file']['url'] ?? $value['properties']['Img']['files'][0]['file']['url'] = null,
                 'prix' => $value['properties']['Prix']['number'],
                 'lien' => $value['properties']['Lien']['url'],
             ];
