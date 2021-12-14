@@ -55,7 +55,7 @@ class NotionService
         return $this->formatData($this->makeRequest($array));
     }
 
-    // Format les données
+    // Formater les données
     public function formatData(array $data): array
     {
         $formattedData = [];
