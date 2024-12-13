@@ -41,7 +41,10 @@ jobs:
           extensions: mbstring, xml, ctype, iconv, intl, pdo, pdo_mysql, dom, filter, gd, json
         env:
           update: true
-          
+
+      - name : composer update step
+        run: composer update --with-all-dependencies          
+      
       - name: Composer install step
         run: composer install
         
