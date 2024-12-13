@@ -47,6 +47,12 @@ jobs:
       
       - name: Composer install step
         run: composer install
+
+     # Nettoyez `vendor` et `composer.lock` et réinstallez
+      - name: Clean vendor and composer.lock
+        run: |
+          rm -rf vendor composer.lock
+          composer install --no-scripts --no-progress       
         
       - name: generate static Dump
         run: php bin/console dump-static-site
