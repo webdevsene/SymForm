@@ -36,7 +36,7 @@ jobs:
           
       - name : Composer Install
         # run: composer install
-        run: composer update symfony/flex
+        run: composer require symfony/flex --update-with-dependencies
         
       - name : Generate Static Dump
         run: php bin/console dump-static-site
